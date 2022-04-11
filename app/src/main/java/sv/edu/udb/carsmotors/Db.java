@@ -146,6 +146,7 @@ public class Db extends SQLiteOpenHelper {
 
         return id;
     }
+
     public ArrayList<Automovil_Class> mostrarAutomoviles() {
 
         SQLiteDatabase db = this.getWritableDatabase();

@@ -45,15 +45,16 @@
         android:backgroundTint="#FF9800"
         android:hint="Automovil"
         app:cornerRadius="20dp" />
+
     <Button
         android:id="@+id/btnusuarios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnauto"
         android:layout_marginTop="50dp"
-        android:hint="Usuarios"
         android:backgroundTint="#FF9800"
-        app:cornerRadius="20dp"/>
+        android:hint="Usuarios"
+        app:cornerRadius="20dp" />
 
 
 </RelativeLayout>
