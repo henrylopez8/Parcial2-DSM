@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Administrador extends AppCompatActivity {
-    Button btncolores,btnmarcas,btntipo,btnautomovil;
+    Button btncolores,btnmarcas,btntipo,btnautomovil,btnusuarios;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +44,14 @@ public class Administrador extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(getApplicationContext(),Automovil.class);
+                startActivity(intent);
+            }
+        });
+        btnusuarios=(Button) findViewById(R.id.btnusuarios);
+        btnusuarios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getApplicationContext(),Usuarios.class);
                 startActivity(intent);
             }
         });

@@ -10,14 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarsMotors">
         <activity
+            android:name=".Usuarios"
+            android:parentActivityName=".Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Administrador" />
+        </activity>
+        <activity
             android:name=".Automovil"
-            android:exported="true" />
+            android:parentActivityName=".Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Administrador" />
+        </activity>
         <activity
             android:name=".TipoAutomovil"
-            android:exported="true" />
+            android:parentActivityName=".Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Administrador" />
+        </activity>
         <activity
             android:name=".Marcas"
-            android:exported="true" />
+            android:parentActivityName=".Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Administrador" />
+        </activity>
         <activity
             android:name=".Colores"
             android:parentActivityName=".Administrador">
