@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarsMotors">
         <activity
+            android:name=".ver_automoviles"
+            android:exported="false" />
+        <activity
             android:name=".Automovil"
             android:exported="true" />
         <activity

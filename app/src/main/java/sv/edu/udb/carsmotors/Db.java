@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class Db extends SQLiteOpenHelper {
 
     public static final String DBNAME="Cars motorDB5.db";
@@ -144,7 +146,37 @@ public class Db extends SQLiteOpenHelper {
 
         return id;
     }
+    public ArrayList<Automovil_Class> mostrarAutomoviles() {
 
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ArrayList<Automovil_Class> listaCoches = new ArrayList<>();
+        Automovil_Class automovil=null;
+        Cursor cursorAutomoviles;
+
+        cursorAutomoviles = db.rawQuery("SELECT * FROM " + "Automovil" + " ORDER BY nombre ASC", null);
+
+        if (cursorAutomoviles.moveToFirst()) {
+            do {
+                automovil = new Automovil_Class();
+                automovil.setId(cursorAutomoviles.getInt(0));
+                automovil.setModelo(cursorAutomoviles.getString(1));
+                automovil.setNumeroVin(cursorAutomoviles.getString(2));
+                automovil.setNumeroChasis(cursorAutomoviles.getString(3));
+                automovil.setNumeroMotor(cursorAutomoviles.getString(4));
+                automovil.setNumeroasientos(cursorAutomoviles.getInt(5));
+                automovil.setAnio(cursorAutomoviles.getString(6));
+                automovil.setCapacidadAsientos(cursorAutomoviles.getInt(7));
+                automovil.setPrecio(cursorAutomoviles.getFloat(8));
+
+                listaCoches.add(automovil);
+            } while (cursorAutomoviles.moveToNext());
+        }
+
+        cursorAutomoviles.close();
+
+        return listaCoches;
+    }
 
 
     public Boolean RevisarUsuario(String User) {
