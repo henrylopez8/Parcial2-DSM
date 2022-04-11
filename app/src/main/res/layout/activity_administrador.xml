@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:hint="Marcas"
         android:backgroundTint="#FF9800"
-        app:cornerRadius="20dp"/>
+        android:hint="Marcas"
+        app:cornerRadius="20dp" />
 
     <Button
         android:id="@+id/btncolores"
@@ -22,9 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnmarcas"
         android:layout_marginTop="50dp"
-        android:hint="Colores"
         android:backgroundTint="#FF9800"
-        app:cornerRadius="20dp"/>
+        android:hint="Colores"
+        app:cornerRadius="20dp" />
 
     <Button
         android:id="@+id/btntipoauto"
@@ -32,9 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btncolores"
         android:layout_marginTop="50dp"
-        android:hint="Tipo Automovil"
         android:backgroundTint="#FF9800"
-        app:cornerRadius="20dp"/>
+        android:hint="Tipo Automovil"
+        app:cornerRadius="20dp" />
 
     <Button
         android:id="@+id/btnauto"
@@ -42,9 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btntipoauto"
         android:layout_marginTop="50dp"
-        android:hint="Automovil"
         android:backgroundTint="#FF9800"
-        app:cornerRadius="20dp"/>
+        android:hint="Automovil"
+        app:cornerRadius="20dp" />
     <Button
         android:id="@+id/btnusuarios"
         android:layout_width="match_parent"

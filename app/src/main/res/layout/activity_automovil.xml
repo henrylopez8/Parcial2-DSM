@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtmodelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Modelo" />
+
+            <EditText
+                android:id="@+id/txtnumerovin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Numero VIN" />
+
+            <EditText
+                android:id="@+id/txtnumemrochasis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Numero Chasis " />
+
+            <EditText
+                android:id="@+id/txtnumeromotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Numero motor
+        " />
+
+            <EditText
+                android:id="@+id/txtnumeroAsientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:layout_marginTop="50dp"
+                android:hint="Numero de asientos" />
+
+            <EditText
+                android:id="@+id/txtanio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Año" />
+            <EditText
+                android:id="@+id/txtcapacidadasientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:hint="Capacidad de los asientos" />
+            <EditText
+                android:id="@+id/txtprecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:layout_marginTop="50dp"
+                android:hint="Precio" />
+            <EditText
+                android:id="@+id/txturlauto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Url de la imagen del auto" />
+            <EditText
+                android:id="@+id/txtdescripcionauto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Descripcion del auto" />
+
+            <Button
+                android:id="@+id/btnagregarauto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Agregar automovil" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
