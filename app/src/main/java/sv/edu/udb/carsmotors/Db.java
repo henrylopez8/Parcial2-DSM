@@ -217,7 +217,6 @@ public class Db extends SQLiteOpenHelper {
         if (cursorColores.moveToFirst()) {
             do {
                 color = new Color_Class();
-                color.setId(cursorColores.getInt(0));
                 color.setDescripcion(cursorColores.getString(1));
 
                 listaColores.add(color);

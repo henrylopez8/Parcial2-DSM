@@ -12,18 +12,14 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/viewId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#090808"
-            android:textSize="24sp" />
-
-        <TextView
             android:id="@+id/viewDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#090808"
-            android:textSize="24sp" />
+            android:lineSpacingExtra="8sp"
+            android:padding="10px"
+            android:textAlignment="center"
+            android:textColor="#565453"
+            android:textSize="22sp" />
 
 
     </LinearLayout>

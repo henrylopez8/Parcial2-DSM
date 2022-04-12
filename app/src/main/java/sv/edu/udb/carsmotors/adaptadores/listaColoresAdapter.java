@@ -32,7 +32,6 @@ public class listaColoresAdapter extends RecyclerView.Adapter<listaColoresAdapte
     @Override
     public void onBindViewHolder(@NonNull colorViewHolder holder, int position) {
         holder.viewDescripcion.setText(listaColores.get(position).getDescripcion());
-        holder.viewId.setText(listaColores.get(position).getId());
     }
 
     @Override
@@ -45,7 +44,6 @@ public class listaColoresAdapter extends RecyclerView.Adapter<listaColoresAdapte
         public colorViewHolder(@NonNull View itemView) {
             super(itemView);
             viewDescripcion = itemView.findViewById(R.id.viewDescripcion);
-            viewId = itemView.findViewById((R.id.viewId));
         }
     }
 }
