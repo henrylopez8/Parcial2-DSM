@@ -30,7 +30,7 @@ public class listaAutomovilesAdapter extends RecyclerView.Adapter<listaAutomovil
     public void onBindViewHolder(@NonNull automovilViewHolder holder, int position) {
         holder.viewNombre.setText(listacoches.get(position).getModelo());
         holder.viewModelo.setText(listacoches.get(position).getAnio());
-        holder.viewPrecio.setText(listacoches.get(position).getPrecio().toString());
+        holder.viewPrecio.setText("$"+listacoches.get(position).getPrecio().toString());
     }
 
     @Override

@@ -268,8 +268,8 @@ public class Db extends SQLiteOpenHelper {
             do {
                 usuario = new Usuario_Class();
                 usuario.setId(cursorUsuarios.getInt(0));
-                usuario.setNombre(cursorUsuarios.getString(5));
-                usuario.setApellido(cursorUsuarios.getString(2));
+                usuario.setNombre(cursorUsuarios.getString(4));
+                usuario.setApellido(cursorUsuarios.getString(6));
 
                 listaUsuarios.add(usuario);
             } while (cursorUsuarios.moveToNext());

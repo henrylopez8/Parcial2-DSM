@@ -15,15 +15,15 @@
             android:id="@+id/viewNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#090808"
-            android:textSize="24sp" />
+            android:textColor="#0EB3FB"
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/viewApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#090808"
-            android:textSize="24sp" />
+            android:textColor="#FC1313"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
