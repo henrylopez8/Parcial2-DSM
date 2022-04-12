@@ -16,19 +16,13 @@ import sv.edu.udb.carsmotors.Db;
 
 public class Administrador extends AppCompatActivity {
     Button btncolores,btnmarcas,btntipo,btnautomovil,btnusuarios;
-    RecyclerView listacoches;
-    ArrayList<Automovil_Class> listaArrayCoches;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_administrador);
 
-        listacoches = findViewById(R.id.listaAutomoviles);
-        listacoches.setLayoutManager(new LinearLayoutManager(this));
-        listaArrayCoches = new ArrayList<>();
 
-        listaAutomovilesAdapter adapter = new listaAutomovilesAdapter(Db.mostrarAutomoviles());
-        listacoches.setAdapter(adapter);
 
         btncolores= (Button) findViewById(R.id.btncolores);
         btncolores.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +53,7 @@ public class Administrador extends AppCompatActivity {
         btnautomovil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Automovil.class);
+                Intent intent= new Intent(getApplicationContext(),ver_automoviles.class);
                 startActivity(intent);
             }
         });

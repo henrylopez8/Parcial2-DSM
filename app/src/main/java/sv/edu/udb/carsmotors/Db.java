@@ -147,15 +147,15 @@ public class Db extends SQLiteOpenHelper {
         return id;
     }
 
-    public static ArrayList<Automovil_Class> mostrarAutomoviles() {
+    public ArrayList<Automovil_Class> mostrarAutomoviles() {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
         ArrayList<Automovil_Class> listaCoches = new ArrayList<>();
-        Automovil_Class automovil=null;
+        Automovil_Class automovil;
         Cursor cursorAutomoviles;
 
-        cursorAutomoviles = db.rawQuery("SELECT * FROM " + "Automovil" + " ORDER BY nombre ASC", null);
+        cursorAutomoviles = db.rawQuery("SELECT * FROM " + "Automovil" + " ORDER BY Modelo ASC", null);
 
         if (cursorAutomoviles.moveToFirst()) {
             do {

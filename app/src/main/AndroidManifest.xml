@@ -33,6 +33,13 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
+            android:name=".ver_automoviles"
+            android:parentActivityName=".Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Administrador" />
+        </activity>
+        <activity
             android:name=".Login"
             android:parentActivityName=".MainActivity">
             <meta-data
