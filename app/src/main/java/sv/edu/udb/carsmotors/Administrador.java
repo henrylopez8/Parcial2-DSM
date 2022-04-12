@@ -28,7 +28,7 @@ public class Administrador extends AppCompatActivity {
         btncolores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Colores.class);
+                Intent intent = new Intent(getApplicationContext(), ver_colores.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +37,7 @@ public class Administrador extends AppCompatActivity {
         btnmarcas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Marcas.class);
+                Intent intent= new Intent(getApplicationContext(),ver_marcas.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class Administrador extends AppCompatActivity {
         btntipo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),TipoAutomovil.class);
+                Intent intent= new Intent(getApplicationContext(),ver_tipocoches.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class Administrador extends AppCompatActivity {
         btnusuarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Usuarios.class);
+                Intent intent= new Intent(getApplicationContext(),ver_usuarios.class);
                 startActivity(intent);
             }
         });

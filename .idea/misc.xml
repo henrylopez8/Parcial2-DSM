@@ -5,8 +5,17 @@
       <map>
         <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_administrador.xml" value="0.14447463768115942" />
         <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_automovil.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_colores.xml" value="0.13134057971014493" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_lista_item_colores.xml" value="0.13134057971014493" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_lista_item_marca.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_lista_item_tipocoche.xml" value="0.13134057971014493" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_lista_item_usuario.xml" value="0.13134057971014493" />
         <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_ver_automoviles.xml" value="0.25" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_ver_colores.xml" value="0.13134057971014493" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_ver_marcas.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_ver_tipocoches.xml" value="0.13134057971014493" />
+        <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/activity_ver_usuarios.xml" value="0.13134057971014493" />
         <entry key="..\:/Users/lenovo/Desktop/Parcial2-DSM/app/src/main/res/layout/lista_item_automoviles.xml" value="0.2" />
       </map>
     </option>

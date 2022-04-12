@@ -179,6 +179,107 @@ public class Db extends SQLiteOpenHelper {
         return listaCoches;
     }
 
+    public ArrayList<Marca_Class> mostrarMarcas() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ArrayList<Marca_Class> listaMarcas = new ArrayList<>();
+        Marca_Class marca;
+        Cursor cursorMarcas;
+
+        cursorMarcas = db.rawQuery("SELECT * FROM " + "Marcas" + " ORDER BY Nombre ASC", null);
+
+        if (cursorMarcas.moveToFirst()) {
+            do {
+                marca = new Marca_Class();
+                marca.setId(cursorMarcas.getInt(0));
+                marca.setNombre(cursorMarcas.getString(1));
+
+                listaMarcas.add(marca);
+            } while (cursorMarcas.moveToNext());
+        }
+
+        cursorMarcas.close();
+
+        return listaMarcas;
+    }
+
+    public ArrayList<Color_Class> mostrarColores() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ArrayList<Color_Class> listaColores = new ArrayList<>();
+        Color_Class color;
+        Cursor cursorColores;
+
+        cursorColores = db.rawQuery("SELECT * FROM " + "Colores" + " ORDER BY Descripcion ASC", null);
+
+        if (cursorColores.moveToFirst()) {
+            do {
+                color = new Color_Class();
+                color.setId(cursorColores.getInt(0));
+                color.setDescripcion(cursorColores.getString(1));
+
+                listaColores.add(color);
+            } while (cursorColores.moveToNext());
+        }
+
+        cursorColores.close();
+
+        return listaColores;
+    }
+
+    public ArrayList<TipoCoche_Class> mostrarTipoCoches() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ArrayList<TipoCoche_Class> listaTipos = new ArrayList<>();
+        TipoCoche_Class tipo;
+        Cursor cursorTipos;
+
+        cursorTipos = db.rawQuery("SELECT * FROM " + "TipoAutomovil" + " ORDER BY Descripcion ASC", null);
+
+        if (cursorTipos.moveToFirst()) {
+            do {
+                tipo = new TipoCoche_Class();
+                tipo.setId(cursorTipos.getInt(0));
+                tipo.setDescripcion(cursorTipos.getString(1));
+
+                listaTipos.add(tipo);
+            } while (cursorTipos.moveToNext());
+        }
+
+        cursorTipos.close();
+
+        return listaTipos;
+    }
+
+    public ArrayList<Usuario_Class> mostrarUsuarios() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ArrayList<Usuario_Class> listaUsuarios = new ArrayList<>();
+        Usuario_Class usuario;
+        Cursor cursorUsuarios;
+
+        cursorUsuarios = db.rawQuery("SELECT * FROM " + "Usuarios" + " ORDER BY Nombres ASC", null);
+
+        if (cursorUsuarios.moveToFirst()) {
+            do {
+                usuario = new Usuario_Class();
+                usuario.setId(cursorUsuarios.getInt(0));
+                usuario.setNombre(cursorUsuarios.getString(5));
+                usuario.setApellido(cursorUsuarios.getString(2));
+
+                listaUsuarios.add(usuario);
+            } while (cursorUsuarios.moveToNext());
+        }
+
+        cursorUsuarios.close();
+
+        return listaUsuarios;
+    }
+
 
     public Boolean RevisarUsuario(String User) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
